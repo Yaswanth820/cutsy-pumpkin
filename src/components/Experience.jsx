@@ -6,21 +6,23 @@ import { experiences } from '../constants';
 
 const Experience = () => {
   return (
-    <div className='bg-black p-12 w-screen text-white'>
-      <p className='text-center font-light'>MY JOURNEY SO FAR.</p>
-      <h2 className='text-center text-5xl font-extrabold mt-2'>Work Experience.</h2>
-      <VerticalTimeline className='mt-16'>
+    <div className='experience bg-black w-screen text-white px-4 py-16'>
+      <div className='px-2 sm:px-16'>
+        <p className='font-light'>MY JOURNEY SO FAR.</p>
+        <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Work Experience.</h2>
+      </div>
+      <VerticalTimeline className='mt-9'>
         {experiences.map((experience) => (
           <VerticalTimelineElement
             className="relative vertical-timeline-element--work"
             contentStyle={{ background: "#1d1836", color: "#fff", }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
             date={experience.duration}
-            iconStyle={{ background: '#383E56' }}
+            iconStyle={{ background: '#fff' }}
             icon={
               <div className='flex justify-center items-center w-full h-full'>
                 <img
-                  src={experience.icon}
+                  src={experience.logo}
                   alt={experience.company}
                   className='w-[60%] h-[60%] object-contain'
                 />

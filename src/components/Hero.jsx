@@ -19,10 +19,10 @@ const Hero = () => {
 	}, [text]);
 
 	return (
-		<div className='realtive h-[calc(100vh-4rem)] flex justify-center items-center text-white'>
-			<div className='h-36 backdrop-blur-sm rounded-3xl'>
-				<h1 className='text-7xl font-bold'>Hi, I'm&nbsp;<span className='text-purple-600 font-extrabold'>{text}</span></h1>
-				<p className='mt-3 text-xl'>I love to learn about building scalable and optimized backend systems.</p>
+		<div className='hero realtive h-[calc(100vh+4rem)] flex justify-center items-center text-white' id='hero'>
+			<div className='px-4 h-36 backdrop-blur-sm rounded-3xl'>
+				<h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-purple-600 font-extrabold'>{text}</span></h1>
+				<p className='mt-3 text-xl'>I love to learn and build scalable and optimized backend systems.</p>
 			</div>
 			<div className='absolute xs:bottom-10 bottom-5 w-full flex justify-center items-center'>
 				<a href='#about'>
@@ -46,4 +46,3 @@ const Hero = () => {
 }
 
 export default Hero;
-// px-8 py-16 backdrop-blur-sm bg-white/5
