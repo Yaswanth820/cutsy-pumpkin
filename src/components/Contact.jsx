@@ -45,7 +45,9 @@ const Contact = () => {
 			.then(
 				() => {
 					setLoading(false);
-					toast.success("Message sent successfully!");
+					toast.success("Message sent successfully!", {
+						position: toast.POSITION.BOTTOM_RIGHT,
+					});
 					setForm({
 						name: "",
 						email: "",
@@ -55,14 +57,15 @@ const Contact = () => {
 				(error) => {
 					setLoading(false);
 					console.error(error);
-					toast.error("Something went wrong. Please try again later.");
+					toast.error("Something went wrong. Please try again later.", {
+						position: toast.POSITION.BOTTOM_RIGHT,
+					});
 				}
 			);
 	};
 
 	return (
 		<div className='text-white contact' id='contact'>
-			<ToastContainer />
 			<div className='z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl' style={{ background: '#120d2b' }}>
 				<p className='font-light'>REACH OUT TO ME</p>
 				<h2 className='text-5xl font-extrabold mt-2'>Contact.</h2>
@@ -117,6 +120,7 @@ const Contact = () => {
 					</button>
 				</form>
 			</div>
+			<ToastContainer />
 		</div>
 	);
 };
