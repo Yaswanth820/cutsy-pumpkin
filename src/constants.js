@@ -120,10 +120,14 @@ export const services = [
     },
     {
         title: "Backend Developer",
-        icon: 'backend.png',
+        icon: 'web.png',
     }, 
     {
         title: "Gamer",
-        icon: 'mobile.png',
+        icon: 'web.png',
     },
 ];
+
+export const EMAIL_JS_SERVICE_ID = 'service_wytsw9t';
+export const EMAIL_JS_TEMPLATE_ID = 'template_wporf';
+export const EMAIL_JS_PUBLIC_KEY = 'V-btpJRF5B_F6e_Cy';

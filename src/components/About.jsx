@@ -26,11 +26,11 @@ const ServiceCard = ({ service }) => (
 const About = () => {
   return (
     <div className='bg-black p-4 h-full w-full text-white sm:flex sm:justify-around about' id='about'>
-      <div>
+      <div className='flex flex-col justify-around'>
         <div className='sm:px-16 px-2'>
           <p className='font-light'>INTRODUCTION.</p>
           <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Overview.</h2>
-          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>Hello World, This is Balaji Yaswanth Vankala. I am final year CSE student (2019-2023) 🚀. I have got an emotion for computers 💘. I am a Software Engineer with good experience in building optimized backend systems and wonderful frontend web applications. I am an open-source enthusiast and a competitive programmer. Make sure to checkout my articles on <a className=' text-blue-600' href="https://medium.com/@balajiyaswanth.v">Medium</a> and answers on <a className=' text-blue-600' href="https://stackoverflow.com/users/12291279/csgeek">StackOverflow</a> 😉 . Apart from coding my hobbies are playing sudoku and swimming 🐳. </p>
+          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>Hello World, This is Balaji Yaswanth Vankala. I am final year CSE student (2019-2023) 🚀. I have got an emotion for computers 💘. I am a Software Engineer with good experience in building optimized backend systems and wonderful frontend web applications. I am an open-source enthusiast and a competitive programmer. Make sure to checkout my articles on <a className=' text-purple-300' href="https://medium.com/@balajiyaswanth.v">Medium</a> and answers on <a className=' text-green-200' href="https://stackoverflow.com/users/12291279/csgeek">StackOverflow</a> 😉 . Apart from coding my hobbies are playing sudoku and swimming 🐳. </p>
 
           <ButtonLink
             url='https://drive.google.com/file/d/1LwiGyOgqkn_efT16Gk8nSmMIXzKKef7u/view?usp=sharing'
@@ -45,7 +45,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <img src="me-og.jpg" alt="me" className='w-full sm:w-1/3 h-[calc(100vh-4rem)]' />
+      <img src="me-og.jpg" alt="me" className='sm:w-1/3 mt-4 sm:mt-0' />
     </div>
   )
 }
